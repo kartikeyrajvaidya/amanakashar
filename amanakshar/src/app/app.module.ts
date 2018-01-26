@@ -9,6 +9,7 @@ import { ServiceareaComponent } from './servicearea/servicearea.component';
 import { WorkareaComponent } from './workarea/workarea.component';
 import { ContactComponent } from './contact/contact.component';
 import { StatComponent } from './stat/stat.component';
+import { TestimonialComponent } from './testimonial/testimonial.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { StatComponent } from './stat/stat.component';
     ServiceareaComponent,
     WorkareaComponent,
     ContactComponent,
-    StatComponent
+    StatComponent,
+    TestimonialComponent
   ],
   imports: [
     BrowserModule
