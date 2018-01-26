@@ -8,6 +8,7 @@ import { AboutComponent } from './about/about.component';
 import { ServiceareaComponent } from './servicearea/servicearea.component';
 import { WorkareaComponent } from './workarea/workarea.component';
 import { ContactComponent } from './contact/contact.component';
+import { StatComponent } from './stat/stat.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ContactComponent } from './contact/contact.component';
     AboutComponent,
     ServiceareaComponent,
     WorkareaComponent,
-    ContactComponent
+    ContactComponent,
+    StatComponent
   ],
   imports: [
     BrowserModule
