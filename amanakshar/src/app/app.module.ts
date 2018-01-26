@@ -6,6 +6,8 @@ import { HeaderComponent } from './header/header.component';
 import { WelcomepageComponent } from './welcomepage/welcomepage.component';
 import { AboutComponent } from './about/about.component';
 import { ServiceareaComponent } from './servicearea/servicearea.component';
+import { WorkareaComponent } from './workarea/workarea.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +15,9 @@ import { ServiceareaComponent } from './servicearea/servicearea.component';
     HeaderComponent,
     WelcomepageComponent,
     AboutComponent,
-    ServiceareaComponent
+    ServiceareaComponent,
+    WorkareaComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule
