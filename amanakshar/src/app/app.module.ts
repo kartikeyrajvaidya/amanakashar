@@ -1,3 +1,4 @@
+import { EmailService } from './email/email.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -26,7 +27,7 @@ import { TestimonialComponent } from './testimonial/testimonial.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [EmailService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
