@@ -41,20 +41,20 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
                   <div class="contact-form">
-                     <form id="contact-form" method="post" action="http://mhbthemes.com/demos/pixie/pixie/contact.php">
+                     <form (ngSubmit)="onSubmit(f)" #f="ngForm">
                      <div class="messages"></div>
                         <div class="controls">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Name*" required="required" data-error="Name is required.">
-                                        <div class="help-block with-errors"></div>
+                                        <input type="text" name="name" class="form-control" placeholder="Name*" ngModel>
+                                       
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Email*" required="required" data-error="Valid email is required.">
-                                        <div class="help-block with-errors"></div>
+                                        <input  type="email" name="email" class="form-control" placeholder="Email*" required  ngModel>
+                                       
                                     </div>
                                 </div>
                              </div>
@@ -62,20 +62,20 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <input id="form_subject" type="text" name="subject" class="form-control" placeholder="Subject*" required="required" data-error="Subject is required.">
-                                        <div class="help-block with-errors"></div>
+                                        <input  type="text" name="subject" class="form-control" placeholder="Subject*" required  ngModel>
+                                        
                                     </div>
                                 </div>
                              </div>
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <textarea id="form_message" name="message" class="form-control" placeholder="Message*" rows="7" required="required" data-error="Please,leave us a message."></textarea>
-                                        <div class="help-block with-errors"></div>
+                                        <textarea id="form_message" name="message" class="form-control" placeholder="Message*" rows="7" required ngModel></textarea>
+                                        
                                     </div>
                                 </div>
                                 <div class="col-md-12">
-                                    <input type="submit" class="btn btn-effect btn-sent" value="Send message">
+                                    <button type="submit" class="btn btn-effect btn-sent" >Submit</button>
                                 </div>
                             </div>
                         </div>

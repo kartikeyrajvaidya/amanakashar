@@ -11,6 +11,8 @@ import { WorkareaComponent } from './workarea/workarea.component';
 import { ContactComponent } from './contact/contact.component';
 import { StatComponent } from './stat/stat.component';
 import { TestimonialComponent } from './testimonial/testimonial.component';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { TestimonialComponent } from './testimonial/testimonial.component';
     TestimonialComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    HttpModule,
   ],
   providers: [EmailService],
   bootstrap: [AppComponent]
